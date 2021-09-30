@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+
+    <script>
+        let div = document.createElement('div');
+
+        div.innerHTML = '<p>Contoh CreateElement</p>';
+        document.body.appendChild(div);
+        div.id = 'content';
+        div.className='classcontent';
+        let text = document.createTextNode('CreateElement menggunakanTextNode');
+        div.appendChild(text);
+    </script>
+    
+</body>
+</html>
+
+<!-- Menambahkan Id pada elemen 
+div.id = 'content';
+
+    Menambahkan Class pada elemen
+div.className='classcontent';
+
+    Menambahkan teks pada elemen node 
+let text = document.createTextNode('CreateElement menggunakanTextNode');
+div.appendChild(text);-->
+
+
