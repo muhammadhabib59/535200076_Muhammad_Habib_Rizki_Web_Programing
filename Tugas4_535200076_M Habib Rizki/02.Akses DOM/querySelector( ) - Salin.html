@@ -1,0 +1,72 @@
+<!-- Universal Selector 
+let element = document.querySelector('*');
+let elements = document.querySelectorAll('*');
+
+    Type Selector
+let firstHeading = document.querySelector('h1');
+let heading2 = document.querySelectorAll('h2');
+
+    Class Selector
+let note = document.querySelector('.menu-item');
+let notes = document.querySelectorAll('.menu-item');
+
+    Id Selector
+let logo = document.querySelector('#logo');
+
+    Attribute Selector
+let autoplay = document.querySelector('[autoplay]');
+let autoplays = document.querySelectorAll('[autoplay]');
+
+    Grouping Selector
+let elements = document.querySelectorAll('<div>, <p>');-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>querySelector() Demo</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.png" alt="Logo" id="logo">
+        </div>
+        <nav class="primary-nav">
+            <ul>
+                <li class="menu-item current"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#services" target="_blank">Services</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the JS Dev Agency</h1>
+
+        <div class="container">
+            <section class="section-a">
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae adipisci illo natus reprehenderit nostrum, animi perferendis voluptatum nulla itaque dolores nisi officia impedit aut numquam? Commodi laborum maiores velit.</p>
+                <button>Read More</button>
+            </section>
+            <section class="section-b">
+                <h2>PWA Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, non molestias, iusto dolorum corporis excepturi maiores nihil accusamus perferendis adipisci provident. Laborum aspernatur tempore optio placeat iusto dolor, dolorum earum.</p>
+                <button>Read More</button>
+            </section>
+            <section class="section-c">
+                <h2>Mobile App Dev</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates autem hic vitae qui iusto reiciendis, iste aut dignissimos quam esse repellendus perferendis inventore modi molestiae assumenda voluptatibus doloribus dolore eligendi!</p>
+                <button>Read More</button>
+            </section>
+        </div>
+    </main>
+    <br>
+    <button onclick="myUniversal()">Universal Selector</button>
+    <button onclick="myType()">Type Selector</button>
+    <button onclick="myClass()">Class Selector</button>
+    <button onclick="myId()">Id Selector</button>
+    <button onclick="myAttribute()">Attribute Selector</button>
+    <button onclick="myGroup()">Group Selector</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
